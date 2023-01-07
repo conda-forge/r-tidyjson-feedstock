@@ -1,4 +1,4 @@
-{% set version = '0.3.1' %}
+{% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyjson_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyjson/tidyjson_{{ version }}.tar.gz
-  sha256: d8f2e71dcaa87cafdb119fbbfda8c7c18084dddb60611f3f833549202eb3a5e7
+  sha256: e636cabc95babe12f0051b57404c2aa49f13b5d54a6904e84770ee3b412ad57e
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -56,7 +56,7 @@ about:
   summary: Turn complex 'JSON' data into tidy data frames.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
