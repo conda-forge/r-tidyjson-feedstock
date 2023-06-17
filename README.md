@@ -1,11 +1,11 @@
-About r-tidyjson
-================
+About r-tidyjson-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidyjson-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/colearendt/tidyjson
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidyjson-feedstock/blob/main/LICENSE.txt)
 
 Summary: Turn complex 'JSON' data into tidy data frames.
 
