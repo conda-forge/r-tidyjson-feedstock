@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.3.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyjson_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyjson/tidyjson_{{ version }}.tar.gz
-  sha256: e636cabc95babe12f0051b57404c2aa49f13b5d54a6904e84770ee3b412ad57e
+  sha256: a0de821678deb70c6a7583281153b44733c67db16b847e2cd983f407c69c2b19
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
